@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BDA5C1C-A512-475E-AEC3-B03655AF2E9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VehicleRenting</RootNamespace>
+    <AssemblyName>VehicleRenting</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminAccount.Designer.cs">
+      <DependentUpon>adminAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver.cs" />
+    <Compile Include="driver1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driver1.Designer.cs">
+      <DependentUpon>driver1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="driverAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driverAccount.Designer.cs">
+      <DependentUpon>driverAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="driverHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driverHistory.Designer.cs">
+      <DependentUpon>driverHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageDriver.Designer.cs">
+      <DependentUpon>manageDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managePassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managePassenger.Designer.cs">
+      <DependentUpon>managePassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageStaff.Designer.cs">
+      <DependentUpon>manageStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger1.Designer.cs">
+      <DependentUpon>passenger1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger2.Designer.cs">
+      <DependentUpon>passenger2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffCS.cs" />
+    <Compile Include="StoreInfo.cs" />
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminAccount.resx">
+      <DependentUpon>adminAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driver1.resx">
+      <DependentUpon>driver1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driverAccount.resx">
+      <DependentUpon>driverAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginPage.resx">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageDriver.resx">
+      <DependentUpon>manageDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managePassenger.resx">
+      <DependentUpon>managePassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStaff.resx">
+      <DependentUpon>manageStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger1.resx">
+      <DependentUpon>passenger1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger2.resx">
+      <DependentUpon>passenger2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
